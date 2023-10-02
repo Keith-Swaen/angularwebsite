@@ -1,15 +1,13 @@
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Component, Inject } from '@angular/core';
-
 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class AppComponent {
-  title = 'angularwebsite';
+export class NavbarComponent implements OnInit {
   constructor(
     public translate: TranslateService
   ) {
@@ -19,8 +17,6 @@ export class AppComponent {
   switchLang(lang: string) {
     this.translate.use(lang);
   }
-
   
-}
-
-
+  ngOnInit(): void {}
+ }

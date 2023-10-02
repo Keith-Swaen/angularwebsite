@@ -1,15 +1,13 @@
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Component, Inject } from '@angular/core';
-
-
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-faq',
+  templateUrl: './faq.component.html',
+  styleUrls: ['./faq.component.css']
 })
-export class AppComponent {
-  title = 'angularwebsite';
+export class FaqComponent {
+
   constructor(
     public translate: TranslateService
   ) {
@@ -19,8 +17,6 @@ export class AppComponent {
   switchLang(lang: string) {
     this.translate.use(lang);
   }
-
   
+  ngOnInit(): void {}
 }
-
-

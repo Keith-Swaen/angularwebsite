@@ -1,0 +1,103 @@
+<div class="spacer"></div>
+<h1 class="text-center">API form</h1>
+
+
+<!-- <div class="w-full md:w-96 md:max-w-full mx-auto block">
+    <div class="p-6 border border-black sm:rounded-md">
+      <form method="POST" action="http://collector.monitor.nl/Collector" >
+        <label class="block mb-6">
+          <span class="text-gray-700">Your name</span>
+          <input
+            name="name"
+            type="text"
+            class="
+              block
+              w-full
+              mt-1
+              border-black
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            "
+            placeholder="Fill in your name"
+          />
+        </label>
+
+        <label class="block mb-6">
+            <span class="text-gray-700">Select API</span>
+            <select name="name" class="
+              block
+              w-full
+              mt-1
+              border-black
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            " list="name-options" dropup>
+              <option value="John Doe">API 1 </option>
+              <option value="Jane Doe">API 2</option>
+            </select>
+            <datalist id="name-options">
+              <option value="John Doe">API 1</option>
+              <option value="Jane Doe">API 2</option>
+              
+            </datalist>
+          </label>
+  
+       <label class="block mb-6">
+          <span class="text-gray-700">Date and time</span>
+          <input
+            name="datetime"
+            type="datetime-local"
+            class="
+              block
+              w-full
+              mt-1
+              border-black
+              rounded-md
+              shadow-sm
+              focus:border-indigo-300
+              focus:ring
+              focus:ring-indigo-200
+              focus:ring-opacity-50
+            "
+          />
+        </label>
+          
+        <div class="mb-6">
+           <button (click)="sendData()" 
+            type="submit"
+            class="
+              h-10
+              px-5
+              text-white
+              bg-black
+              rounded-lg
+              transition-colors
+              duration-150
+              focus:shadow-outline
+              hover:bg-gray-400
+            "
+          >
+            Submit 
+          </button> 
+        </div>      
+      </form>
+    </div>
+  </div> -->
+  
+  <div class ="text-center">
+    <mat-radio-group class="bg-black text-white font-bold py-2 px-4 rounded-lg" style="color: white;" [(ngModel)]="selectedApi">
+      <mat-radio-button value="firstApi" style="color: white;">First API</mat-radio-button>
+      <mat-radio-button value="secondApi" style="color: white;">Second API</mat-radio-button>
+    </mat-radio-group>
+    <button type="submit" class="bg-black hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-lg" style="color: white;">Send Data</button>
+  </div>
+  
+  

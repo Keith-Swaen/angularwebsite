@@ -1,0 +1,16 @@
+.flexbox-toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  .form-inline select {
+    color: white;
+    background-color: black;
+  }
+
+  .custom-select {
+    color: white;
+    background-color: black;
+  }
+  

@@ -1,0 +1,43 @@
+/* The following CSS is used only for the preview,
+   please don't copy it to your production code */
+   body { padding: 2rem 0; }
+
+   .block {
+    border-color: black;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+    border-color: black;
+  }
+ 
+  button:hover {
+    background-color: #f2f2f2;
+    color: black;
+    border-color: black;
+  }
+
+
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .spacer {
+    margin-top: 200px;
+    margin-bottom: auto;
+  }
+  
+  .mat-radio-button {
+    color: red;
+  }
+  
+
+  
+
+
+  

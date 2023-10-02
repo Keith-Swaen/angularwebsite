@@ -1,0 +1,25 @@
+<mat-toolbar color="" class="flexbox-toolbar">  
+  
+    <p>{{'myapp' | translate}}</p>
+ 
+    <div class="">
+    <a mat-button routerLink="home" >{{'home' | translate}}</a>
+    <a mat-button routerLink="form">{{'form' | translate}}</a>
+    <a mat-button routerLink="faq">{{'faq' | translate}}</a>
+    </div>
+    <span class="form-inline">
+      <select class="form-control custom-select" #selectedLang (change)="switchLang(selectedLang.value)">
+        <!-- ... -->
+          (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" 
+          [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language }}
+        </option>
+      </select>
+    </span>
+  </mat-toolbar>
+
+ 
+  
+ 

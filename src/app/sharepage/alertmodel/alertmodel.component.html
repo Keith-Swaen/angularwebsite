@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<h2 mat-dialog-title>{{'secretCave' | translate}}</h2>
+<mat-dialog-content class="mat-typography">
+  <p>{{'secretCaveText' | translate}}</p>
+
+  
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>{{'cancel' | translate}}</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>{{'sure' | translate}}</button>
+</mat-dialog-actions>
